@@ -1,0 +1,88 @@
+#cmd-date {
+    background:#fff url('../img/calendar_2.png')  97% 50% no-repeat ;
+}
+#cmd-date::-webkit-inner-spin-button {
+    display: none;
+}
+#cmd-date::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+#cmd-date {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+}
+
+
+/* btn submit form */
+
+.c-btn {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: block;
+    line-height: 36px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 88px;
+    height: 36px;
+    text-decoration: none;
+    padding: 0 8px;
+    text-align: center;
+    letter-spacing: .5px;
+    border-radius: 2px;
+    background: #5bc0de;;
+    color: #fff;
+    transition: background 200ms ease-in-out;
+    box-shadow: 0 3.08696px 5.82609px 0 rgba(0, 0, 0, 0.16174), 0 3.65217px 12.91304px 0 rgba(0, 0, 0, 0.12435);
+}
+
+.c-btn--flat {
+    background: transparent;
+
+    min-width: 52px;
+}
+
+ .c-btn:focus,.c-btn:hover {
+    background: #fff;
+    color: #5bc0de;;
+    text-decoration: none;
+}
+
+.c-btn:active {
+    background: #fff;
+    color: #5bc0de;;
+    text-decoration: none;
+    box-shadow: 0 9.6087px 10.78261px 0 rgba(0, 0, 0, 0.17217), 0 13.56522px 30.3913px 0 rgba(0, 0, 0, 0.15043);
+}
+
+.c-btn--flat, .c-btn--flat:hover, .c-btn--flat:active {
+    box-shadow: none;
+}
+
+
+/* new atiem/
+
+
+ */
+
+
+
+#newitem{
+    font-size: 22px;
+    padding-left: 8px;
+}
+
+/* scrollable table */
+.scrollable{
+    height:300px;
+    overflow:scroll ;
+    overflow-style: auto;
+    overflow-x: hidden;
+}

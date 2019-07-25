@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../Web/img/favicon.ico" />
+
+    <title>متجري</title>
+    <link href="../css/loading.css" rel="stylesheet">
+</head>
+<body>
+
+<!--- loading -->
+
+<div class="loading-bro" id="loading">
+    <h1>Loading</h1>
+    <svg id="load" x="0px" y="0px" viewBox="0 0 150 150">
+        <circle id="loading-inner" cx="75" cy="75" r="60"/>
+    </svg>
+</div>
+
+
+<!-- jQuery -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+
+<script>
+
+    $(function() {
+        $("#loading").fadeOut(1000, function() {
+            $("#wrapper").fadeIn(1000);
+            //$("body").css("background-color","#607d8b");
+            window.location.href="admin.php";
+        });
+    });
+
+
+</script>
+</body>
+</html>

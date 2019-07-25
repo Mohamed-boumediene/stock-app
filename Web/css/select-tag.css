@@ -1,0 +1,73 @@
+
+.md-select {
+    /*Demo css do not add to your project*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    margin: 22px 0 8px 0;
+    padding-bottom: 2px;
+    position: relative;
+    min-width: 180px;
+}
+.md-select *, .md-select :after, .md-select :before {
+    box-sizing: border-box;
+}
+.md-select [type="button"] {
+    background: rgb(91, 192, 222);
+    border-color: rgba(0, 0, 0, 0.12);
+    border-width: 0 0 1px 0;
+    color: rgb(255, 255, 255);
+    cursor: default;
+    display: block;
+    line-height: 30px;
+    padding: 0px 170px 0px 0px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    width: 100%;
+    z-index: 1;
+    outline: none;
+    overflow: hidden;
+    font-size: 25px;
+}
+.md-select [type="button"]:focus, .md-select [type="button"]:hover {
+    background: rgb(91, 192, 222);
+}
+.md-select [type="button"]:after {
+    content: "\25be";
+    float: right;
+    padding-left: 14px;
+}
+.md-select ul[role="listbox"] {
+    background-color: white;
+    cursor: default;
+    list-style: none;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 0;
+    max-height: 0;
+    position: absolute;
+    padding: 0;
+    transform: translateY(-50%);
+    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+}
+.md-select ul[role="listbox"] li {
+    height: 48px;
+    margin: 0;
+    padding: 10px 16px;
+    outline: none;
+    overflow: hidden;
+}
+.md-select ul[role="listbox"] li:focus, .md-select ul[role="listbox"] li:hover, .md-select ul[role="listbox"] li.active {
+    background: rgba(0, 0, 0, 0.1);
+}
+.md-select.active ul {
+    max-height: 200px;
+    overflow: auto;
+    padding: 8px 0 16px 0px;
+    z-index: 2;
+    transition: all 0.2s ease;
+}
